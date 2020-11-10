@@ -25,7 +25,7 @@ After run testcases generate `.yaml` files
 npm run start
 ```
 
-Open Your Browser app running in [http://localhost:3000] api documentations located in [http://localhost:3000/swagger]
+Open Your Browser app running in `http://localhost:3000` api documentations located in `http://localhost:3000/swagger`
 
 
 Happy coding !
