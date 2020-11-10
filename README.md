@@ -1,4 +1,4 @@
-# [chai-http-swagger][https://www.npmjs.com/package/chai-http-swagger] Usage examples
+# chai-http-swagger Usage examples
 
 The library provides generate swagger yaml files and build api docs in your testcases
 ---
@@ -25,7 +25,7 @@ After run testcases generate `.yaml` files
 npm run start
 ```
 
-Open Your Browser app running in [http://localhost:3000][http://localhost:3000] api documentations located in [http://localhost:3000/swagger][http://localhost:3000/swagger]
+Open Your Browser app running in [http://localhost:3000] api documentations located in [http://localhost:3000/swagger]
 
 
 Happy coding !
