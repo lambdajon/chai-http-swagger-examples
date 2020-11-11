@@ -115,12 +115,10 @@ app.put('/users/:id', (req, res) => {
 app.delete('/users/:id', (req, res) => {
 
   const userId = req.params.id;
-
   const targetUser = users.find((user) => user.id == userId);
 
   if (!targetUser) {
-    return res.json({
-      code: 404,
+    return res.status(404).json({
       msg: 'NOT_FOUND'
     });
   }
@@ -129,6 +127,18 @@ app.delete('/users/:id', (req, res) => {
 
   res.json(targetUser);
 });
+
+app.get('/private', (req, res) => {
+  if(!req.headers.authorization){
+    res.status(403).json({
+      msg: 'Unauthorized'
+    })
+  }
+  res.json({
+    msg: 'PRIVATE_MESSAGE'
+  });
+});
+
 
 
 
